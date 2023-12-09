@@ -1,17 +1,17 @@
 "use client";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const About = () => {
-  const blueDiv = {
-    visible: {
-      scale: 1,
-      y: 0,
-      x: 0,
-      transition: { duration: 0.8 },
-    },
-    hidden: { scale: 0.65, y: -70, x: -35 },
-  };
+  // const blueDiv = {
+  //   visible: {
+  //     scale: 1,
+  //     y: 0,
+  //     x: 0,
+  //     transition: { duration: 0.8 },
+  //   },
+  //   hidden: { scale: 0.65, y: -70, x: -35 },
+  // };
 
   return (
     <div>
@@ -26,14 +26,13 @@ const About = () => {
                 alt=""
               />
             </div>
-            <motion.div
-              variants={blueDiv}
+            <div
               className="h-[250px] -z-20 w-[300px]  bg-[#3535D8] rounded-2xl absolute top-10 md:-right-16 -right-7"
-            ></motion.div>
-            <motion.div
+            ></div>
+            <div
               variants={blueDiv}
               className="md:h-[350px] h-[200px] -z-10 md:w-[300px] w-[200px]  bg-[#E8E8E8] rounded-2xl absolute top-[150px] md:-right-[130px] -right-[60px]"
-            ></motion.div>
+            ></div>
             <div className="md:h-[120px] h-[80px] flex justify-center md:w-[250px] w-[130px]  bg-[#FFAE22] rounded-2xl absolute bottom-8 -right-[40px]">
               <div className="flex flex-col items-center justify-center gap-4  my-2 font-bold font-sans  text-black">
                 <p className="text-lg tracking-wider">Follow Us</p>
