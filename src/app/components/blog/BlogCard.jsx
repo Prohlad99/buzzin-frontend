@@ -7,7 +7,7 @@ const BlogCard = ({ image, title, date, type }) => {
         <div>
           <img className="rounded-2xl w-full sm:h-[300px]" src={image} alt="" />
         </div>
-        <div className="opacity-[0.7] sm:opacity-[0.9] sm:-bottom-10 shadow-md shadow-blue-500 -bottom-2 sm:-left-10 overflow-hidden py-3 px-4 absolute w-full bg-gradient-to-l rounded-2xl from-[#6017CD] to-[#0B54E7] ">
+        <div className="opacity-[0.9] sm:opacity-[0.9] sm:-bottom-10 shadow-md shadow-blue-500 -bottom-2 sm:-left-10 overflow-hidden py-3 px-4 absolute w-full bg-gradient-to-l rounded-2xl from-[#6017CD] to-[#0B54E7] ">
           <p className="font-semibold text-base text-stone-300 flex gap-1 justify-center items-center">
             {date}
             <span className="w-[3px] h-[3px] bg-stone-300 rounded-full"></span>{" "}

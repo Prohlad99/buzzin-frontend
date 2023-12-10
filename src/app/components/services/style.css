@@ -1,6 +1,10 @@
 .overly {
-  width: 280px;
-  height: 272px;
-  position: absolute;
-  top: 0;
+  opacity: 0;
+}
+.service_card_container:hover .title {
+  display: none;
+}
+.service_card_container:hover > .overly {
+  opacity: 0.8;
+  transition: all ease-in-out 0.4s;
 }
