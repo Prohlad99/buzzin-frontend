@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>
+        <div className='2xl:mx-14 2xl:overflow-hidden 2xl:border-[1px] border-stone-300'>
           <NavbarHome />
           {children}
           <Footer/>

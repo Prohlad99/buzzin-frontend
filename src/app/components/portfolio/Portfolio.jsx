@@ -56,7 +56,7 @@ const Portfolio = () => {
   return (
     <div>
       {/* container */}
-      <div className="bg-gradient-to-t from-[#0B54E7] to-[#6017CD] h-[400px]">
+      <div className="bg-gradient-to-t py-4 from-[#0B54E7] to-[#6017CD] h-[400px]">
         {/* content */}
         <div className="grid grid-cols-12 gap-6 md:pt-[180px]">
           {/* left */}

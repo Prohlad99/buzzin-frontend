@@ -13,17 +13,17 @@ const Services = () => {
         {/* left  */}
         <div className="md:col-span-5 sm:col-span-12 col-span-12 relative">
           <div>
-            <h3 className="tracking-widest text-xl sm:text-2xl">
-              <span className="shadow-blue-600 sm:pl-5 pl-3 ml-8 py-1 rounded-l-md text-white bg-gradient-to-r from-[#6017CD] to-[#0B54E7] shadow-2xl">
+            <h3 className="tracking-widest ml-2 text-xl sm:text-2xl">
+              <span className="shadow-blue-600 sm:pl-5 pl-3  py-1 rounded-l-md text-white bg-gradient-to-r from-[#6017CD] to-[#0B54E7] shadow-2xl">
                 OUR
               </span>
               SERVICES
             </h3>
-            <h1 className="md:text-5xl text-3xl sm:text-5xl font-sans mt-10 ml-8">
+            <h1 className="md:text-5xl ml-2 text-3xl sm:text-5xl font-sans mt-10">
               Demand First-Rate Best Services
             </h1>
-            <div className="h-[5px] w-[100px] bg-slate-400 my-8 sm:my-8 ml-8 rounded-sm"></div>
-            <p className="ml-8 tracking-wider text-stone-400">
+            <div className="h-[5px] ml-2 w-[100px] bg-slate-400 my-8 sm:my-8  rounded-sm"></div>
+            <p className="ml-2 tracking-wider text-stone-400">
               Our Mission Is To Provide Quality English Language Instruction
               Through A Variety Of Courses To International
             </p>

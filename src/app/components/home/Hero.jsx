@@ -13,21 +13,21 @@ const Hero = () => {
                 alt=""
               />
 
-              <h3 className="tracking-widest text-xl sm:text-2xl">
-                <span className="shadow-stone-600 sm:pl-5 pl-3 py-1 ml-8 rounded-l-md text-white bg-gradient-to-r from-[#120b1e] to-[#1e2f4f] shadow-2xl">
+              <h3 className="tracking-widest text-xl sm:text-2xl ml-2">
+                <span className="shadow-stone-600 sm:pl-5 pl-3 py-1  rounded-l-md text-white bg-gradient-to-r from-[#120b1e] to-[#1e2f4f] shadow-2xl">
                   BEST
                 </span>{" "}
                 BUSINSESS
               </h3>
-              <h1 className="md:text-5xl text-3xl sm:text-5xl font-sans mt-10 ml-8">
+              <h1 className="md:text-5xl text-3xl sm:text-5xl font-sans mt-10 ml-2">
                 We&apos;re Equally Excited About Corporate
               </h1>
-              <div className="h-[5px] w-[100px] bg-slate-400 my-8 sm:my-8 ml-8 rounded-sm"></div>
-              <p className="ml-8 tracking-wider text-stone-400">
+              <div className="h-[5px] ml-2 w-[100px] bg-slate-400 my-8 sm:my-8 rounded-sm"></div>
+              <p className="tracking-wider text-stone-400 ml-2">
                 Our mission is to provide quality English language instruction
                 through a variety of courses to international and local.
               </p>
-              <button className="ml-8 mt-6 my-3 sm:px-10 sm:py-3  py-1 px-6 rounded-full shadow-lg shadow-stone-400 hover:shadow-yellow-400 hover:bg-gradient-to-r hover:from-[#FFA524] hover:to-[#FFDE1D] hover:text-black bg-slate-600 text-white">
+              <button className="mt-6 my-3 ml-2 sm:px-10 sm:py-3  py-1 px-6 rounded-full shadow-lg shadow-stone-400 hover:shadow-yellow-400 hover:bg-gradient-to-r hover:from-[#FFA524] hover:to-[#FFDE1D] hover:text-black bg-slate-600 text-white">
                 LEARN MORE
               </button>
               <div className="flex gap-4 ml-[100px] sm:ml-[80px] sm:my-8 mt-2  mb-[60px]  text-stone-400">

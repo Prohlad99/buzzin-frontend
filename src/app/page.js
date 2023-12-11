@@ -9,7 +9,7 @@ import Testimonial from "./components/testimonial/Testimonial";
 
 export default function Home() {
   return (
-    <main>
+    <main >
       <div>
         <Hero />
       </div>
