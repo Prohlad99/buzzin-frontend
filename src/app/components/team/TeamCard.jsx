@@ -4,7 +4,7 @@ const TeamCard = ({ image, name, title }) => {
   return (
     <div>
       {/* container */}
-      <div className="md:w-[250px] w-full sm:w-[400px] mx-auto rounded-2xl relative">
+      <div className="md:w-[250px] shadow-xl shadow-stone-600 w-full sm:w-[400px] mx-auto rounded-2xl relative">
         <div>
           <img className="rounded-2xl" src={image} alt="" />
         </div>

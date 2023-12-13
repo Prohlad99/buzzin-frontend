@@ -1,5 +1,6 @@
 "use client";
 import { Carousel } from "flowbite-react";
+import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa6";
 import TeamCard from "./TeamCard";
 
@@ -72,12 +73,14 @@ const TeamCarousel = () => {
       </Carousel>
 
       <div className="flex justify-center">
-        <button className="text-white font-thin flex justify-center items-center gap-2">
-          VIEW ALL TEAM{" "}
-          <span>
-            <FaAngleRight />
-          </span>
-        </button>
+        <Link href="members">
+          <button className="text-white font-thin flex justify-center items-center gap-2">
+            VIEW ALL TEAM{" "}
+            <span>
+              <FaAngleRight />
+            </span>
+          </button>
+        </Link>
       </div>
     </div>
   );

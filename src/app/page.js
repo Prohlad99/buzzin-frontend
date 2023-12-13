@@ -34,7 +34,7 @@ export default function Home() {
       <div className="my-10">
         <Testimonial />
       </div>
-      {/* <AllBlogs/> */}
+      
     </main>
   );
 }
