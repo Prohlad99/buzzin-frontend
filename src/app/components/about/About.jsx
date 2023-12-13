@@ -1,32 +1,49 @@
 "use client";
 // import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const About = () => {
-  // const blueDiv = {
-  //   visible: {
-  //     scale: 1,
-  //     y: 0,
-  //     x: 0,
-  //     transition: { duration: 0.8 },
-  //   },
-  //   hidden: { scale: 0.65, y: -70, x: -35 },
-  // };
-
+  const blueDiv = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5, staggerChildren: 0.1, delayChildren: 0.1 },
+    },
+    hidden: { opacity: 0, x: 50 },
+  };
+  const containerImage = {
+    visible: {
+      x: 0,
+      transition: { duration: 0.5 },
+    },
+    hidden: {
+      x: -100,
+    },
+  };
   return (
     <div>
       <div className="grid grid-cols-12 md:gap-4 mt-10">
         <div className="md:col-span-7 gird justify-center col-span-12 sm:col-span-6">
           {/* image container */}
           <div className=" md:m-8 ml-6 sm:ml-0 rounded-xl relative inline-block shadow-2xl ">
-            <div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={containerImage}
+            >
               <img
                 className="md:h-[450px] h-[300px] w-full z-10 rounded-xl"
                 src="/assets/banner/about.jpg"
                 alt=""
               />
-            </div>
-            <div className="h-[250px] -z-20 w-[300px]  bg-[#3535D8] rounded-2xl absolute top-10 md:-right-16 -right-7"></div>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={blueDiv}
+              className="h-[250px] -z-20 w-[300px]  bg-[#3535D8] rounded-2xl absolute top-10 md:-right-16 -right-7"
+            ></motion.div>
             <div className="md:h-[350px] h-[200px] -z-10 md:w-[300px] w-[200px]  bg-[#E8E8E8] rounded-2xl absolute top-[150px] md:-right-[130px] -right-[60px]"></div>
             <div className="md:h-[120px] h-[80px] flex justify-center md:w-[250px] w-[130px]  bg-[#FFAE22] rounded-2xl absolute bottom-8 -right-[40px]">
               <div className="flex flex-col items-center justify-center gap-4  my-2 font-bold font-sans  text-black">

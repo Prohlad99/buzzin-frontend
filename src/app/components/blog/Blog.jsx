@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BlogCard from "./BlogCard";
 
 const Blog = () => {
@@ -43,34 +44,40 @@ const Blog = () => {
             Our Mission Is To Provide Quality English Language Instruction
             Through A Variety Of Courses To International And Local Students.
           </p>
-          <button className="mt-6 my-8 md:my-8 sm:px-10 sm:py-2   py-2 hover:shadow-blue-200 shadow-yellow-200 shadow-lg md:py-3 md:px-12 px-6 rounded-full bg-gradient-to-r from-[#FFA524] to-[#FFDE1D]  text-black hover:bg-gradient-to-r hover:from-[#6017CD] hover:to-[#0B54E7]  hover:text-white">
-            VIEW ALL BLOG
-          </button>
+          <Link href="all_blogs">
+            <button className="mt-6 my-8 md:my-8 sm:px-10 sm:py-2   py-2 hover:shadow-blue-200 shadow-yellow-200 shadow-lg md:py-3 md:px-12 px-6 rounded-full bg-gradient-to-r from-[#FFA524] to-[#FFDE1D]  text-black hover:bg-gradient-to-r hover:from-[#6017CD] hover:to-[#0B54E7]  hover:text-white">
+              VIEW ALL BLOG
+            </button>
+          </Link>
         </div>
 
-        <div className="md:col-span-7  col-span-12 sm:col-span-6">
+        <div className="md:col-span-7 justify-self-center col-span-12 sm:col-span-6">
           {/* blog container */}
-          <BlogCard
-            image={blogs[0].img}
-            title={blogs[0].title}
-            type={blogs[0].type}
-            date={blogs[0].date}
-          />
+          <Link href={`blog/${blogs[0].id}`}>
+            <BlogCard
+              image={blogs[0].img}
+              title={blogs[0].title}
+              type={blogs[0].type}
+              date={blogs[0].date}
+            />
+          </Link>
         </div>
         <div className="col-span-12">
-          <div className="grid grid-cols-12 ">
+          <div className="grid grid-cols-12 justify-items-center">
             {blogs.map((blog, index) =>
               blog.id !== 1 ? (
                 <div
                   key={index}
                   className="sm:col-span-6 col-span-12 mt-[40px] sm:mt-0"
                 >
-                  <BlogCard
-                    image={blog.img}
-                    title={blog.title}
-                    date={blog.date}
-                    type={blog.type}
-                  />
+                  <Link href={`blog/${blog.id}`}>
+                    <BlogCard
+                      image={blog.img}
+                      title={blog.title}
+                      date={blog.date}
+                      type={blog.type}
+                    />
+                  </Link>
                 </div>
               ) : (
                 ""

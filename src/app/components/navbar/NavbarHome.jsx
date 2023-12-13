@@ -32,6 +32,13 @@ const NavbarHome = () => {
           <Navbar.Link
             className="text-white sm:text-lg md:xl hover:bg-blue-400"
             as={Link}
+            href="#"
+          >
+            Our Team
+          </Navbar.Link>
+          <Navbar.Link
+            className="text-white sm:text-lg md:xl hover:bg-blue-400"
+            as={Link}
             href="/"
           >
             Services

@@ -1,9 +1,10 @@
 "use client";
+
 const BlogCard = ({ image, title, date, type }) => {
   return (
     <div>
       {/* container */}
-      <div className="relative sm:w-[450px] sm:h-[300px] mx-4 sm:mx-auto">
+      <div className="relative shadow-2xl shadow-black rounded-2xl w-[320px] sm:w-[450px] sm:h-[300px] mx-4 sm:mx-auto">
         <div>
           <img className="rounded-2xl w-full sm:h-[300px]" src={image} alt="" />
         </div>
