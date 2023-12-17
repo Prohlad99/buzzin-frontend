@@ -1,6 +1,7 @@
 "use client";
 // import { motion } from "framer-motion";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const About = () => {
@@ -82,9 +83,11 @@ const About = () => {
             A Professional And Supportive Atmosphere Utilizing Our Unique
             English Teaching Methodology. Our Mission Is To Provide.
           </p>
-          <button className="mt-6 my-8 md:my-8 sm:px-10 sm:py-2   py-2 shadow-blue-200 hover:shadow-yellow-200 shadow-lg md:py-3 md:px-12 px-6 rounded-full hover:bg-gradient-to-r hover:from-[#FFA524] hover:to-[#FFDE1D]  hover:text-black bg-gradient-to-r from-[#6017CD] to-[#0B54E7]  text-white">
-            READ MORE
-          </button>
+          <Link href="about">
+            <button className="mt-6 my-8 md:my-8 sm:px-10 sm:py-2   py-2 shadow-blue-200 hover:shadow-yellow-200 shadow-lg md:py-3 md:px-12 px-6 rounded-full hover:bg-gradient-to-r hover:from-[#FFA524] hover:to-[#FFDE1D]  hover:text-black bg-gradient-to-r from-[#6017CD] to-[#0B54E7]  text-white">
+              READ MORE
+            </button>
+          </Link>
         </div>
       </div>
     </div>

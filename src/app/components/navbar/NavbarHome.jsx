@@ -25,14 +25,14 @@ const NavbarHome = () => {
           <Navbar.Link
             className="text-white sm:text-lg md:xl hover:bg-blue-400"
             as={Link}
-            href="/"
+            href="about"
           >
             About Us
           </Navbar.Link>
           <Navbar.Link
             className="text-white sm:text-lg md:xl hover:bg-blue-400"
             as={Link}
-            href="#"
+            href="members"
           >
             Our Team
           </Navbar.Link>
@@ -46,14 +46,14 @@ const NavbarHome = () => {
           <Navbar.Link
             className="text-white sm:text-lg md:xl hover:bg-blue-400"
             as={Link}
-            href="/"
+            href="all_blogs"
           >
             Blog
           </Navbar.Link>
           <Navbar.Link
             className="text-white sm:text-lg md:xl hover:bg-blue-400"
             as={Link}
-            href="/"
+            href="contact"
           >
             Contact
           </Navbar.Link>
